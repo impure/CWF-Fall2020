@@ -6,7 +6,7 @@
 
 I had a pretty good AI for my strategy game. But it wasn't that good. Sure, it can beat you in a game, but only if it had a lot more income than you. I wanted to improve it, but I was sort of at a dead end. I used a basic utility system (Meaning every possible move is scored based on some criteria and then the best move was chosen) because it was really easy to implement but I had no clue how to improve it.
 
-Also I had this idea for a new mode called 'manual chess'. Basically instead of having each turn consist of moving every single unit and building as much stuff as you can manual chess mode would have each player move or build a single unit. The only problem is that this would required a major redesign of the AI as right now it just assumes every unit gets to move every turn.
+Also I had this idea for a new mode called 'manual chess'. Basically instead of having each turn consist of moving every single unit and building as much stuff as you can manual chess mode would have each player move or build a single unit. The only problem is that this would require a major redesign of the AI as right now it just assumes every unit gets to move every turn.
 
 ## Summary
 
