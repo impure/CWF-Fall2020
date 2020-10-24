@@ -58,7 +58,7 @@ I actually experimented with this with HQ capturing. I taught the AI to capture 
 
 Speaking of the HQ capture test look at this:
 
-![Capturing The HQ](Images/CaptureHQ.png)
+![Capturing The HQ](Images/CaptureHQ.gif)
 
 How many episodes does it take the infantry to capture the HQ? 955. Like what are you doing? If you were just selecting a tile at random to interact with I'd expect at most 100 moves (because selecting a unit allows us to idle or sell the unit).
 
