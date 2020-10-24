@@ -42,13 +42,13 @@ My code was designed to combat normal race conditions in normal play. But it was
 
 I'm glad I undertook this challenge to learn ML Agents. It was a fun month. And I found a bunch of potential race conditions in my code. But at the end of the day I've decided that ML Agents is not a viable method for implementing AI in my game.
 
-![Increasing Performance](Images/Neural Network Performance.png)
+![Increasing Performance](Images/Neural_Network_Performance.png)
 
 So this is a picture of the AI reward score for each game. It's going slowly but steadily up. Which is good. It means the AI is learning. But the thing is the AI only learns so much. Eventually the charts look like this.
 
-[]
+![Increasing Performance](Images/Neural_Network_Performance2.png)
 
-As you can see the AI Agent is not learning at all. We're 300 tries in and we still have a 95% failure rate. Why? Who knows. My current hypothesis is the data the agent is getting is far too noisy to make a prediction about what to do next. I noticed this when I disabled RNG.
+Sure, the AI starts learning for the first 50 episodes or so. And then... 300 episodes in and we still have a 95% failure rate. Why? Who knows. My current hypothesis is the data the agent is getting is far too noisy to make a prediction about what to do next. I noticed this when I disabled RNG.
 
 So my game adds 0-10% extra damage based on RNG similar to Advance Wars. I found that by simply disabling this I was able to reduce training times by 25%. From this I can conclude that neural networks do not like RNG. But large maps inherently have a lot of RNG.
 
@@ -58,7 +58,7 @@ I actually experimented with this with HQ capturing. I taught the AI to capture 
 
 Speaking of the HQ capture test look at this:
 
-[]
+![Capturing The HQ](Images/CaptureHQ.png)
 
 How many episodes does it take the infantry to capture the HQ? 955. Like what are you doing? If you were just selecting a tile at random to interact with I'd expect at most 100 moves (because selecting a unit allows us to idle or sell the unit).
 
