@@ -12,7 +12,7 @@ Also I had this idea for a new mode called 'manual chess'. Basically instead of 
 
 ![Training ranged units.](Images/TrainingRanged.gif)
 
-So I chose to implement my new AI using Unity's ML Agents. Basically it would still use a utility function except this time instead of me specifying the utility, ML Agents would calculate it for me. This way I can very easily retrofit my existing code and it reduces the liklihood of overfitting the data. What could possibly go wrong?
+So I chose to implement my new AI using Unity's ML Agents. Basically it would still use a utility function except this time instead of me specifying the utility, ML Agents would calculate it for me. This way I can very easily retrofit my existing code and it reduces the likelihood of overfitting the data. What could possibly go wrong?
 
 ## Challenges
 
@@ -20,7 +20,7 @@ So I chose to implement my new AI using Unity's ML Agents. Basically it would st
 
 There were a few challenges. First there was the fact that all the ML Agents tutorials conveniently left out two key pieces of information because they are apparently all copy paste jobs of each other.
 
-The first is that the values have to be normalized. I mean, it'll still work if the values aren't normalized, but if you have values signifcantly out of range it won't work. I had a value damage * unitValue. And unitValue was something like 20000 and damage was normalized. So if your values are that out of range it'll take the network forever to learn with them.
+The first is that the values have to be normalized. I mean, it'll still work if the values aren't normalized, but if you have values significantly out of range it won't work. I had a value `damage * unitValue`. And unitValue was something like 20000 and damage was normalized. So if your values are that out of range it'll take the network forever to learn with them.
 
 And the second is that the code that actually runs the neural network isn't instant. Well, not instant. More like synchronous.
 
